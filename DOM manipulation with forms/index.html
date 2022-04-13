@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>DOM manipulation with forms</title>
+</head>
+<body>
+  <!-- header -->
+    <H1 id="title">DOM manipulation with forms</H1>
+    <!-- description of task -->
+    <p id="description"> creating form and fetching the data from the form and storing in a table</p>
+    <div class="container">
+      <!-- creating a form for getting input data -->
+    <form autocomplete="off" action="#" id="form" >
+                <div class="form-group container">
+                  <!-- first name -->
+                <img src="/img/name.jpg" alt=""><label for="first name">First Name </label>
+                <input type="text" name="first name" id="first-name" placeholder="ENTER YOUR FIRST NAME" required>
+                <!-- last name -->
+                <img src="/img/name.jpg" alt=""><label for="last name">Last Name </label>
+                <input type="text" name="last name" id="last-name" placeholder="ENTER YOUR LAST NAME" required> <br>
+                <!-- address -->
+                <img src="/img/address.png" alt=""><label for="address">Address </label> <br>
+                <textarea name="address" id="address" cols="91" rows="3" placeholder="ENTER YOUR ADDRESS" required></textarea> <br>
+                <!-- pincode -->
+                <img src="/img/pincode.png" alt=""><label for="pincode">Pincode</label> <br>
+                <input type="text" name="pincode" id="pincode" placeholder="ENTER PINCODE" required> <br> <br>
+                <!-- gender -->
+                <img src="/img/GENDER.png" alt=""><label for="Gender">Gender -</label>
+                <label for="MALE" id="GENDER1">MALE</label>
+                <input type="radio" name="GENDER" id="GENDER1" checked >
+                <label for="FEMALE" id="GENDER2">FEMALE</label>
+                <input type="radio" name="GENDER" id="GENDER2" checked>
+                <label for="OTHER" id="GENDER3">OTHER</label>
+                <input type="radio" name="GENDER" id="GENDER3" checked> <br> <br>
+                <!-- Favourite food -->
+                <img src="/img/food.jpg" alt=""><label for="food">Select Food -</label>
+                <select name="food" id="food1">
+                    <option value="none">None</option>
+                    <option value="Franky">Franky</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="momos">Momos</option> 
+                </select>
+                <select name="food" id="food2">
+                    <option value="none">None</option>
+                    <option value="Franky">Franky</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="momos">Momos</option>
+                </select>  <br> 
+                <!-- state -->
+                <img src="/img/address.png" alt=""><label for="state">State</label>
+                <input type="text" name="state" id="state" placeholder="STATE" required>
+                <!-- country -->
+                <img src="/img/address.png" alt=""><label for="country">Country</label>
+                <input type="text" name="country" id="country" placeholder="COUNTRY" required>  <br> <br>
+                <!-- submit button -->
+                <button type="submit" id="submit" class="btn btn-primary">SUBMIT</button>
+                </div>
+            </form> <br>
+            <!-- creating a table for collecting the form data -->
+          <h2>DATA COLLECTING TABLE</h2>
+        <table class="table table-bordered">
+          <thead id="head">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Gender</th>
+              <th>Food</th>
+              <th>State</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <!-- tbody for collecting data -->
+          <tbody id="data">
+
+          </tbody>
+        </table>
+        <!-- footer -->
+      <footer> ©️ Nishant Phule (2022), All Rights Reserved</footer>
+      </div>
+      <script src="/js/index.js"></script>
+     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script> 
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

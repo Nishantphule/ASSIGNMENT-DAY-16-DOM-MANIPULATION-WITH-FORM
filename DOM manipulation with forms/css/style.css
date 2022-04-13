@@ -1,0 +1,280 @@
+body{
+    background-color: lightgoldenrodyellow;
+    padding: 0%;
+    margin: 0%;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header */
+H1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    background-color:paleturquoise;
+    text-transform: uppercase;
+    border: solid 5px lemonchiffon;
+    color: deepskyblue;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+}
+/* table header */
+h2{
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
+/* description */
+p{
+    text-align: center;
+    font-weight: bold;
+    background-color:palevioletred;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: lightcyan;
+    border: solid 2px black;
+}
+p:hover{
+  font-size: 30px;
+  color: lightpink;
+  background-color: lightslategrey;
+  border-radius: 20px;
+}
+/* form css */
+.form-group{
+  display: block;
+  border: solid 10px green;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+/* img css */
+img{
+  width: 35px;
+  height: 35px;
+  padding-bottom: 5px;
+  border-radius: 20PX;
+}
+/* input data labels */
+label{
+  color: rgb(241, 7, 7);
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container{
+  padding-top: 20px;
+
+}
+/* input data css */
+input,textarea,select{
+  margin-bottom: 40px;
+  border: solid 2px red;
+  border-radius: 5px;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(41, 153, 223);
+
+}
+#GENDER1{
+  background-color: lightblue;
+  border: solid 2px red;
+  border-radius: 10px;
+  color: black;
+}
+#GENDER2{
+  background-color: lightpink;
+  border: solid 2px red;
+  border-radius: 10px;
+  color: black;
+}
+#GENDER3{
+  background-color: burlywood;
+  border: solid 2px red;
+  border-radius: 10px;
+  color: black;
+}
+
+input[type="text"],textarea{
+  width: 100%;
+}
+input[type="radio"]{
+  margin-right: 20px;
+}
+input[type="text"]:hover{
+  background-color: lightcoral;
+  font-size: 30px;
+}
+
+textarea:hover{
+  background-color: lightcoral;
+  font-size: 30px;
+}
+select{
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+select:hover{
+  background-color: lightsalmon;
+  font-size: 25px;
+}
+option{
+  text-transform: uppercase;
+  background-color: lightgreen;
+  font-weight: bold;
+}
+
+#submit{
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#submit:hover{
+  font-size: 32px;
+}
+/* table css */
+th{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: royalblue;
+  
+}
+td{
+  font-size: 18px;
+  text-transform: capitalize;
+  color: royalblue;
+}
+table{
+  border: solid 5px ;
+}
+thead{
+  background-color: lightgrey;
+}
+tbody{
+  background-color: lightcoral;
+}
+
+/* media screen for tablet */
+  @media only screen and (max-width: 991px) {
+    H1{
+      font-size: 40px;
+    }
+    .container,textarea,input[type=text] {
+      width: 100%;
+      margin-top: 0;
+    }
+    h2,p,footer{
+      font-size: 20px;
+    }
+    #GENDER1,#GENDER2,#GENDER3,input[type="radio"],select{
+      margin-right: 0PX;
+      font-size: 15PX;
+    }
+    select{
+      margin-left: 10px;
+    }
+    select:hover{
+      font-size: 16px;
+    }
+    th{
+      font-size:15px;
+    }
+    td{
+      font-size: 12px;
+    }
+  }
+
+  /* media screen for large screen phone */
+  @media screen and (max-width: 767px){
+    .container,#data,textarea,input[type=text] {
+      width: 100%;
+      margin-top: 0;
+    }
+    H1{
+      font-size: 35px;
+    }
+    h2,p,footer{
+      font-size: 20px;
+    }
+    #GENDER1,#GENDER2,#GENDER3,input[type="radio"],select{
+      margin-right: 0PX;
+      font-size: 15PX;
+    }
+    select{
+      margin-left: 2px;
+    }
+    option{
+      font-size: 10px;
+    }
+    select:hover{
+      font-size: 16px;
+    }
+    #submit{
+      font-size: 15px;
+    }
+    th{
+      font-size:9px;
+    }
+    td{
+      font-size: 5px;
+    }
+  }
+  /* media screen for small screen phone */
+  @media screen and (max-width: 520px){
+    .container,#data,textarea,input[type=text] {
+      width: 100%;
+      margin-top: 0;
+    }
+    H1{
+      font-size: 25px;
+    }
+    h2,p,footer{
+      font-size: 15px;
+    }
+    #GENDER1,#GENDER2,#GENDER3,input[type="radio"],select{
+      margin-right: 0PX;
+      font-size: 3PX;
+    }
+    select{
+      margin-left: 2px;
+    }
+    option{
+      font-size: 8px;
+    }
+    select:hover{
+      font-size: 8px;
+    }
+    #submit{
+      font-size: 5px;
+    }
+    th{
+      font-size:5px;
+    }
+    td{
+      font-size: 3px;
+    }
+  }
+  
+/* footer css */
+  footer{
+    position: sticky;
+    bottom: 0;
+    background-color: aqua;
+    color: black;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
